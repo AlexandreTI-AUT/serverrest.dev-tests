@@ -13,7 +13,7 @@
   "author": "Alexandre Silva",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.3.0",
+    "cypress": "^13.6.2",
     "faker": "^5.5.3"
   },
   "dependencies": {

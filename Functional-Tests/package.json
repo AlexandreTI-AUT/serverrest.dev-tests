@@ -1,0 +1,22 @@
+{
+  "name": "serverest",
+  "version": "1.0.0",
+  "description": "Testes da API do ServeRest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-open": "npx cypress open",
+    "test-run": "npx cypress run",
+    "test-api": "npx cypress run --spec 'cypress/e2e/api'",
+    "test-chrome": "npx cypress run -b chrome --spec 'cypress/e2e/web'"
+  },
+  "author": "Alexandre Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.3.0",
+    "faker": "^5.5.3"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.1"
+  }
+}

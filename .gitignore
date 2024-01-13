@@ -1,0 +1,6 @@
+/node_modules/
+.DS_Store
+/cypress/videos/
+/cypress/screenshots/
+/cypress/reports/
+/Performance-Tests/tests/report.html

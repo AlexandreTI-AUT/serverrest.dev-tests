@@ -1,0 +1,6 @@
+import './api/api-user-commands'
+import './api/api-login-commands'
+import './api/api-product-commands'
+import './web/web-commands'
+import './web-data'
+import 'cypress-plugin-api'

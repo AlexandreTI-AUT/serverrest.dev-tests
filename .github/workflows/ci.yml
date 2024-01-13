@@ -1,15 +1,21 @@
-name: Test in Docker
-on: push
+name: Cypress CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
 jobs:
-  cypress-run:
-    runs-on: ubuntu-22.04
-    # Cypress Docker image from https://hub.docker.com/r/cypress
-    # with browsers pre-installed
-    container:
-      image: cypress/browsers:latest
-      options: --user 1001
+  build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: cypress-io/github-action@v6
+      - name: Install Node.js
+        uses: actions/setup-node@v4
         with:
-          browser: chrome
+          node-version: 16.x
+      - name: Install dependencies
+        run: npm install
+      - name: Run Cypress tests
+        run: npx cypress run

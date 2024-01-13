@@ -1,11 +1,21 @@
 {
-  "name": "serverrest.dev-tests",
+  "name": "functional-tests",
   "version": "1.0.0",
-  "description": "### Installing the project - Clone the project in a local environment: https://github.com/AlexandreTI-AUT/serverrest.dev-tests",
-  "main": "index.js",
+  "description": "",
+  "main": "cypress.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-open": "npx cypress open",
+    "test-run": "npx cypress run",
+    "test-api": "npx cypress run --spec 'cypress/e2e/api'"
   },
   "author": "Alexandre Silva",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.2"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.1",
+    "faker": "^5.5.3"
+  }
 }

@@ -1,0 +1,11 @@
+{
+  "name": "serverrest.dev-tests",
+  "version": "1.0.0",
+  "description": "### Installing the project - Clone the project in a local environment: https://github.com/AlexandreTI-AUT/serverrest.dev-tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre Silva",
+  "license": "ISC"
+}

@@ -7,7 +7,7 @@
 
 ### Required
 - Install  Node.js in your computer.Link => https://nodejs.org/pt-br/download/
-- Open the terminal in the `Functional-Tests` project directory and run the `npm install` command to install the dependencies.
+- Open the terminal in the root project directory and run the `npm install` command to install the dependencies.
 
 ### How to run automation
 - Run the command `npm run test-open` to open the Cypress screen to run tests by interacting with the screen.
@@ -42,4 +42,4 @@
 - The `report.html` file presents the test results after completion.
 
 ### Tests Cases for BugBank https://bugbank.netlify.app/
-- In the VerifyMy root `testCases-bugbank.feature`
+- In the root directory `testCases-bugbank.feature`
